@@ -1,10 +1,9 @@
 # Inventaire de la pépinière
 
-> Projet individuel du SAS DFS, brief 2 (sujet : [SUJET.md](SUJET.md)). Remplacez chaque ✏️ par votre texte, puis supprimez cette ligne.
 
 ## Contexte
 
-✏️ *En cinq à huit phrases : qui utilise l'outil (son métier, son geste professionnel), son besoin, ce qu'il saisit, ce que le programme lui affiche, ce que l'outil ne fait pas.*
+L'outil est utilisé par le responsable de la pépinière pédagogique. Son besoin est de pouvoir structurer un inventaire et appliquer une classification botanique simple à partir d'une fiche de référence. Il doit pouvoir ajouter un plan ou l'original du relevé. Il veut pouvoir lister l'inventaire(stock total, stock faible…). Cet inventaire est construit en JavaScript avec Node.js
 
 ## Prérequis et lancement
 
