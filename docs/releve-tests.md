@@ -7,6 +7,8 @@
     nombre de plants et d'espèces de chaque groupe: 
         angiosperme: 8 espèces et 222 plants
         gymnosperme: 2 espèces et 18 plants
+    lignes à moins de 10 plants:
+        N09 = 8 plants et N10 = 10 plants
 
 **Essais dans le menu** : un ajout valide (encore là après redémarrage), chaque règle refusée, une recherche introuvable, chaque tri, la synthèse, un choix inconnu.
 
