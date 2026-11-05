@@ -20,24 +20,25 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Fonctionnalités
 
-✏️ *Cochez seulement ce qui marche : `- [x]`.*
-
-- [ ] Données lues et enregistrées dans `donnees/plants.json`
-- [ ] Ajouter un plant, saisies invalides refusées sans arrêter le programme
-- [ ] Lister l'inventaire, message si l'inventaire est vide
-- [ ] Rechercher par code ou par nom ; filtrer par groupe botanique
-- [ ] Trier par nombre de plants
-- [ ] Synthèse : stock total, espèces et plants par groupe, espèce la plus abondante, stocks faibles (≤ 10 plants)
+- [x] Données lues et enregistrées dans `donnees/plants.json`
+- [x] Ajouter un plant, saisies invalides refusées sans arrêter le programme
+- [x] Lister l'inventaire, message si l'inventaire est vide
+- [x] Rechercher par code ou par nom ; filtrer par groupe botanique
+- [x] Trier par nombre de plants
+- [x] Synthèse : stock total, espèces et plants par groupe, espèce la plus abondante, stocks faibles (≤ 10 plants)
 - [ ] Bonus : supprimer et modifier un plant (choix 6 et 7)
 - [ ] Bonus : tri décroissant, groupe le plus fourni
 
 ## Données
 
-✏️ *Le fichier, le nombre de lignes, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), l'unité. Rappelez qu'elles sont fictives et que les groupes sont fournis par le coach.*
+Les données sont fictives et sont fournis par le coach
 
 ## Limites
 
-✏️ *Au moins trois. Par exemple : le seuil de 10 plants est un repère de suivi, pas une recommandation de production.*
+le seuil de 10 plants est un repère de suivi, pas une recommandation de production.
+L'application ne tient pas compte des plantes en dehors des angiospermes et des gymnospermes.
+L'application ne permet pas encore de supprimer ou de modifier un plant. 
+ 
 
 ## Documents
 
@@ -45,4 +46,4 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-Salia Abdallah KAMAGATE, TheKingSalia. Entraide : avec qui, sur quoi.*
+Salia Abdallah KAMAGATE, TheKingSalia. Entraide : J'ai aidé pleins de personnes que je pourrais mentionner 

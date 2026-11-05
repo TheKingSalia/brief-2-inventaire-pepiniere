@@ -11,4 +11,4 @@
 
 **Le seuil de 10 plants dit-il qu'il faut produire davantage d'une espèce ?** Le seuil de 10 plants sert uniquement de repère pédagogique pour le suivi ; il ne constitue en aucun cas une recommandation de production.
 
-Sources et origine des observations : SUJET.md, google.com · Relu par le coach le : ✏️
+Sources et origine des observations : SUJET.md, google.com · Relu par le coach le : 
