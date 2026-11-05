@@ -21,15 +21,19 @@ async function main() {
   
 
   const afficher_menu = "--------------------- MENU --------------------- \n 1. Ajouter un plant \n 2. Lister l'inventaire \n 3. Rechercher (code, nom, groupe) \n 4. Trier (nombre de plants) \n 5. Synthèse des quantités \n 0. Quitter \n Votre choix : \n";
-  const chargement = await chargerJson(FICHIER_DONNEES);
+  let chargement = await chargerJson(FICHIER_DONNEES);
   console.log(`${chargement.length} espèce(s) chargée(s) depuis ${FICHIER_DONNEES}`);
   try{
-    const arreter = false;
+    let arreter = false;
 
     while(!arreter){
       const reponse = await demander(afficher_menu );
 
       switch(reponse){
+
+        case null:
+          arreter = true
+        break
         case "0":
           arreter = true
         break
@@ -76,10 +80,10 @@ async function main() {
             case "1":
               const reponseG = await demander("Code : ");
               const trouver_plant_code = trouverParId(chargement , reponseG.toUpperCase());
-              if(!trouver_plant){
+              if(!trouver_plant_code){
                 console.log("cet élément n'existe pas")
               } else {
-                const formatage = formaterPlant(trouver_plant);
+                const formatage = formaterPlant(trouver_plant_code);
                 console.log(formatage)                
               }
             break
@@ -119,7 +123,25 @@ async function main() {
         break
 
         case "5":
-          console.log('TODO : coder Synthèse');
+          console.log("--- Synthèse de l'inventaire ---");
+          if(chargement.length === 0){
+            console.log("inventaire vide")
+          } else {
+            console.log(`Nombre d'espèces : ${chargement.length}`);
+            console.log(`Stock total : ${totalPlants(chargement)}`);
+            console.table(syntheseParGroupe(chargement));
+            console.log(`Espèce la plus abondante : ${formaterPlant(especeLaPlusAbondante(chargement))}`);
+            if(stocksFaibles(chargement, SEUIL_STOCK_FAIBLE).length > 0){
+              console.log(`Stocks faibles (≤ ${SEUIL_STOCK_FAIBLE} plants) : ${stocksFaibles(chargement, SEUIL_STOCK_FAIBLE).length}`);
+              console.log(listerPlants(stocksFaibles(chargement, SEUIL_STOCK_FAIBLE)))
+              console.log(`Rappel : le seuil de ${SEUIL_STOCK_FAIBLE} plants est un repère pédagogique de suivi, pas une recommandation de production.`)
+            } else {
+              console.log(`Aucun plant n'a de valeur inférieur au seuil de ${SEUIL_STOCK_FAIBLE} plants`);
+            }
+            
+
+
+          }
         break
        
         default:

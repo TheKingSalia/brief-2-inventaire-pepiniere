@@ -68,33 +68,5 @@
     "groupe": "gymnosperme",
     "nombrePlants": 10,
     "dateReleve": "2026-10-24"
-  },
-  {
-    "id": "DD",
-    "nomCommun": "",
-    "groupe": "",
-    "nombrePlants": 10,
-    "dateReleve": "2026-11-04"
-  },
-  {
-    "id": "N12",
-    "nomCommun": "riz",
-    "groupe": "angiosperme",
-    "nombrePlants": 15,
-    "dateReleve": "2026-11-04"
-  },
-  {
-    "id": "N13",
-    "nomCommun": "papayer",
-    "groupe": "angiosperme",
-    "nombrePlants": 18,
-    "dateReleve": "2026-11-04"
-  },
-  {
-    "id": "N14",
-    "nomCommun": "papayer",
-    "groupe": "gymnosperme",
-    "nombrePlants": 22,
-    "dateReleve": "2026-11-04"
   }
 ]
